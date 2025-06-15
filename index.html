@@ -8,27 +8,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>Surat untuk Keke</h1>
-      <div class="content">
+      <!-- Cover -->
+      <div class="cover" id="cover">
+        <div class="cover-content">
+          <h2>Untuk Keke</h2>
+          <p>Klik untuk membuka surat</p>
+        </div>
+      </div>
+      <!-- Surat -->
+      <div class="content" id="surat" style="display: none">
+        <h1>Surat untuk Keke</h1>
         <p>
           Sayang, abg cuma mau bilang terima kasih buat semua yang udah kita lewatin bareng. Abg sadar, mungkin setelah kejadian semalam kamu jadi merasa mulai jauh, dan jujur, abg ngerasain itu juga. Tapi abg cuma mau kamu tahu, setiap
           detik yang kita habiskan bersama itu benar-benar berarti buat abg. Abg nggak pernah nyesel kenal dan deket sama kamu.
         </p>
-
         <p>Abg juga sadar, abg mungkin nggak akan selalu ada buat kamu, umur abg yang nggak akan ada yang tahu sampai kapan. Tapi satu hal yang pasti, abg nggak pernah nyesel jadi bagian dari hidup kamu, walaupun abg jauh dari sempurna.</p>
-
         <p>
           Abg sadar banget, abg masih banyak kurangnya dibanding cowok-cowok impian kamu. Abg nggak bisa jadi yang paling hebat atau paling romantis, tapi abg tulus sama kamu. Kalau ada satu hal yang abg pengen, itu cuma kamu bisa yakin
           lagi sama abg, walaupun abg bukan siapa-siapa dan masih banyak kekurangannya.
         </p>
-
         <p>
           Terima kasih udah mau bertahan sama abg sejauh ini. Maaf kalau abg sering bikin kamu kecewa atau nggak jadi seperti yang kamu harapkan. Abg cuma pengen kamu tahu, kamu selalu spesial buat abg, dan abg selalu bersyukur pernah punya
           kamu di hidup abg.
         </p>
-
         <p>I love you, keke. Abg sayang kamu, selalu.</p>
       </div>
     </div>
+    <script>
+      document.getElementById("cover").onclick = function () {
+        document.getElementById("cover").style.display = "none";
+        document.getElementById("surat").style.display = "block";
+      };
+    </script>
   </body>
 </html>

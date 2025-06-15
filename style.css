@@ -54,3 +54,33 @@ h1 {
     font-size: 20px;
   }
 }
+
+.cover {
+  background: linear-gradient(135deg, #e74c3c 60%, #fff 100%);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 60px 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  position: relative;
+  z-index: 2;
+}
+
+.cover:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #c0392b 60%, #fff 100%);
+}
+
+.cover-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.cover-content p {
+  font-size: 16px;
+  font-style: italic;
+  color: #fff;
+}
